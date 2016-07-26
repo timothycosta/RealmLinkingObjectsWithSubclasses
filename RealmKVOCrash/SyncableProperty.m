@@ -8,6 +8,7 @@
 
 #import "SyncableProperty.h"
 #import "SyncableObject.h"
+#import "SyncableObjectSubclass.h"
 
 @implementation SyncableProperty
 
@@ -23,12 +24,9 @@
 
 + (NSDictionary*)linkingObjectsProperties{
 	return @{
-			 @"owners" : [RLMPropertyDescriptor descriptorWithClass:SyncableObject.class propertyName:@"dirtyProperties"]
+			 @"owners" : [RLMPropertyDescriptor descriptorWithClass:SyncableObject.class propertyName:@"dirtyProperties"],
+			 @"subclassOwners" : [RLMPropertyDescriptor descriptorWithClass:SyncableObjectSubclass.class propertyName:@"dirtyProperties"],
 			 };
-}
-
-- (SyncableObject*)owner{
-	return self.owners.firstObject;
 }
 
 @end

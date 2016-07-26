@@ -11,3 +11,5 @@
 @interface SyncableObjectSubclass : SyncableObject
 
 @end
+
+RLM_ARRAY_TYPE(SyncableObjectSubclass)

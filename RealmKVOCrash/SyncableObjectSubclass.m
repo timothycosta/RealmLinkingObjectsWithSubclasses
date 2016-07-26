@@ -9,5 +9,4 @@
 #import "SyncableObjectSubclass.h"
 
 @implementation SyncableObjectSubclass
-
 @end

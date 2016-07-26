@@ -8,12 +8,14 @@
 
 #import <Realm/Realm.h>
 #import "SyncableObject.h"
+#import "SyncableObjectSubclass.h"
 
 @class SyncableObject;
+@class SyncableObjectSubclass;
 
 @interface SyncableProperty ()
 @property (readonly) RLMLinkingObjects<SyncableObject*> *owners;
-@property (readonly) SyncableObject *owner;
+@property (readonly) RLMLinkingObjects<SyncableObjectSubclass*> *subclassOwners;
 
 /**
  *  Creates a new SyncableProperty

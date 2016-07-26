@@ -10,5 +10,4 @@
 #import "SyncableProperty.h"
 
 @implementation SyncableObject
-
 @end

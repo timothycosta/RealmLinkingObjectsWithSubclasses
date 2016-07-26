@@ -30,6 +30,7 @@
 	
 	NSLog(@"Sub.dirtyProperties: %@", sub.dirtyProperties);
 	NSLog(@"Prop.owners: %@", prop.owners);
+	NSLog(@"Prop.subclassOwners: %@", prop.subclassOwners);
 
 }
 
